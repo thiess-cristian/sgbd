@@ -1,0 +1,19 @@
+Commands:
+\help: print this message
+\quit: exit ra
+\list: list all relations in the database
+\sqlexec_{STATEMENT}: execute SQL in the database
+
+Relational algebra expressions:
+R: relation named by R
+\select_{COND} EXP: selection over an expression
+\project_{ATTR_LIST} EXP: projection of an expression
+EXP_1 \join EXP_2: natural join between two expressions
+EXP_1 \join_{COND} EXP_2: theta-join between two expressions
+EXP_1 \cross EXP_2: cross-product between two expressions
+EXP_1 \union EXP_2: union between two expressions
+EXP_1 \diff EXP_2: difference between two expressions
+EXP_1 \intersect EXP_2: intersection between two expressions
+\rename_{NEW_ATTR_NAME_LIST} EXP: rename all attributes of an expression
+
+11. where can hill eat one of her favorites under 9

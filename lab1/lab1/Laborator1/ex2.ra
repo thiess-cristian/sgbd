@@ -1,0 +1,10 @@
+\project_{name} 
+( 
+	\select_{gender='female'} person 
+	\join
+	( 
+		\select_{pizzeria='Straw Hat'} Serves
+		\join 
+		eats
+	)
+);

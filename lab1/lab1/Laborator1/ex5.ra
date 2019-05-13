@@ -1,0 +1,13 @@
+\project_{name} 
+( 
+	( 
+		\select_{pizzeria='Dominos'} serves 
+		\join
+		eats
+	)
+)
+\diff
+\project_{name} 
+( 
+	\select_{pizzeria='Dominos'} frequents 
+);

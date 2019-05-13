@@ -1,0 +1,3 @@
+\project_{pizza,age,price}(
+\select_{age<'24' or price<'10'}(Person \join Eats \join Serves)
+);

@@ -1,0 +1,26 @@
+\project_{pizza} Eats
+\diff
+\project_{pizza} 
+(
+	\select_{age >= 24} Person \join Eats
+)
+\union
+(
+    (
+        \project_{pizza} Serves
+        \diff
+        \project_{pizza} 
+		(
+            \project_{pizzeria} Serves \cross \project_{pizza} Serves
+            \diff
+            \project_{pizzeria, pizza} Serves
+        )
+    )
+    \intersect
+    (
+        \project_{pizza} 
+		(
+            \select_{price < 10} Serves
+        )
+    )
+);
